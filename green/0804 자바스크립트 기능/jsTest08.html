@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>기능만들기!!</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<script>
+
+    function params() {
+        for(let i = 0; i < arguments.length; i++) {
+         sum+= arguments[i];
+        }
+
+        console.log(sumg);
+    }
+
+    // arguments에 들어있는 숫자들 
+    params(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    
+    function testDefault(a = 10) {
+        console.log(a);
+    }
+
+    testDefault(100);
+    testDefault(a);
+
+//    // 변수 안에 함수를 넣고 변수 부르는 것처럼 부를 수 있다.
+//    let myFunc = function(a, b) {
+//         console.log(a + b);
+//    }
+
+//    // 근데 얘는 밑에 애 처럼 위로 올라가면
+//    // 에러가 난다.
+//    myFunc(10, 15);
+
+
+//    // 얘가 이렇게 위에 있어도 실행이 잘 됨
+//    // 호이스팅이 일어났기 때문인데...
+//    // 호이스팅이 뭐냐 ... 
+//    hello("홍길동");
+
+//    function hello(name) {
+//         console.log(name + "님 안녕");
+//    }
+
+//    // 다 되네 ...?
+//    hello("0");
+//    hello(NaN);
+
+//    // 파라미터를 하나도 안넣으면
+//    // undifined님 안녕 이라고 뜬다.
+//    hello();
+
+</script>
+</html>

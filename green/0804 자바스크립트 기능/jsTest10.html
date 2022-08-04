@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>기능만들기!!</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<script>
+
+    let arrowFunc = (x) => {
+        console.log(x);
+    }
+
+    arrowFunc("test arrow");
+
+    let say = () => {
+        console.log("say");
+        return "반환값";
+    }
+    
+    let result = say();
+    console.log(result);
+
+    let multyply = (a, b) => a*b;
+    let m = multyply(10, 5);
+    console.log(m);
+
+</script>
+</html>

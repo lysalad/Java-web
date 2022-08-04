@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>기능만들기!!</title>
+    <style>
+        .red {
+            color : red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="move"> 이동하기 </button>
+    <div id = "mydiv"></div>
+    <button id = "changebtn">텍스트값 변경하기</button>
+    <button id = "color"> 색깔 변경하기 </button>
+</body>
+
+<script>
+     document.getElementById("move")
+            .addEventListener("click", function(e) {
+                if (confirm("네이버로 이동하시겠습니까?")) {
+                    window.location.href = "http://www.naver.com";
+                }
+    });
+
+    let mydiv = document.getElementById("mydiv");
+    let changebtn = document.getElementById("changebtn");
+    let colorbtn = document.getElementById("color")
+
+    colorbtn.addEventListener("click", function(e) {
+        mydiv.classList.toggle("red");
+    });
+
+    changebtn.addEventListener("click", function(e) {
+        mydiv.innerHTML = "<strong> 텍스트 값을 변경했습니다.</strong>";
+    });
+</script>
+</html>

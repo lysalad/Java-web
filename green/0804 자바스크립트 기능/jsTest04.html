@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>지역변수/전역변수</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<!-- -->
+
+<script>
+    // 괄호를 잘 맞게 해주지 않으면 멸망뿐...
+    // {
+    //     {
+    //         {
+    //             {
+    //                 console.log("hello");
+    //             }
+    //         }
+    //     }
+    // }
+
+    // 중괄호 이름 벗어나면 당연히 에러남~!
+    // 전역변수 지역변수 넘나 중요한것!
+    {
+        var myVar = 10;
+
+        // 지역변수에는 let이라는 키워드도 자주 쓴다.
+        let localvar = 10;
+
+        // java의 final과 비슷한 친구
+        // 하지만 지역으로만 존재한다...
+        // 지역에 넣어뒀기 때문이다...
+
+        const final = 30;
+
+        console.log(localvar);
+        // 하지만 값을 변경해주려고 하면 에러가 난다.
+        // final = 40;
+
+        console.log(localVar);
+    }
+
+    console.log(myVar);
+   
+
+</script>
+</html>

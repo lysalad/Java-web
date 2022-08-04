@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>자바 스크립트에게 타입이란...? 2</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<!-- -->
+
+<script>
+   // 각각 값을 비교하는 관계연산자
+//    console.log(1 > 2); // 답으로 false
+//    console.log(5 < 7); // 답으로 true 보여준다.
+
+    // console.log(10==10);
+    // console.log("abc" == "abc"); // 문자열도 true가 뜬다.
+
+
+    // 전부 true가 나오는 이유는 ??
+
+    // 두 개를 모두 숫자로 취급한다.
+    // console.log(1 == "1"); // true
+
+    // // 1이 boolean으로 취급되어서 true와 true가 같냐는 말이 된다.
+    // console.log(1 == true); // true
+    // // 위와 마찬가지. 따라서 true가 된다.
+    // console.log(0 == false); // true   
+
+    // 자바 스크립트에서 엄격하게 타입을 구분하려면?
+    // === 을 사용한다.
+    // console.log(1=== "1"); // false 
+
+    // console.log(null === undefined); // 유연할때는 true, === 쓰면 false 나온다.
+
+    // nan는 어떻게 비교해도 false이다. 유연 염격 상관 X
+    // console.log(Nan == NaN); 
+    // console.log(null == undefined);   
+
+    // 두 개를 비교하고 싶을때 사용한다.
+    // 이 두 친구는 NaN에 대해서 드디어 true를 내어준다.
+    console.log(isNaN(NaN));
+
+    // 객체 두 개를 비교한다.(염격하게)
+    console.log(Object.is(NaN, NaN)); 
+
+
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>if와 삼항연산자</title>
+</head>
+
+<body>
+    <p>방가방가</p>
+</body>
+
+<!-- -->
+
+<script>
+    
+    // false 면 실행되지 않는다.
+    // 자바에서는 boolean만 올 수 있었는데,
+    // 자바스크립트에서는 갖가지가 다 올 수 있다.
+    // if(true) {
+    //     console.log("참임");
+    // } else {
+    //     console.log("거짓임");
+    // }
+
+    // 값을 가지고 있는 문자열은 다 참으로 취급된다.
+    // 값이 없으면 거짓이다.
+
+    // 숫자도 마찬가지이다. 값이 있으면 다 참이다.
+    // 0 이면 하지만 그냥 0이면 false이다.
+
+    // 저기에 {} 나 []가 들어가도 참이 된다.
+    // false, NaN, undifiend 정도가 아니면 거의 다 true이다.
+
+    // if(Infinity) ??? 이게 머지?
+    // if("asdfad") {
+    //     console.log("참임");
+    // } else {
+    //     console.log("거짓임");
+    // }
+
+    // //삼항 연산자도 가능하다.
+    // let result = true ? "왼쪽" : "오른쪽";
+    // console.log(result); 
+    
+    // // 왼쪽이 널이면 오른쪽의 대체값으로 바꿔준다.
+    // let nullish = null?? "hello";
+    // console.log(nullish);
+
+    // console.log(true && true);
+    // console.log(false || true);
+
+    // 결과가 "abbbb"로 나온다.
+    // 순서대로 참을 찾아서 제일 처음의 참을 보여주나...?
+    // console.log("asdf" && "" && "abbbb");
+    // console.log(0 && 500); // 500
+
+    // console.log("asdf" || null); // asdf
+    // console.log(0 || 500); // 500
+
+
+    console.log(!"asdf"); // false
+    console.log(!0); // true
+</script>
+</html>
