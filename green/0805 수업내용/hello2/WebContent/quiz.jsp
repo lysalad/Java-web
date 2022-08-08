@@ -2,6 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.Arrays"%>
 <%@ page import="java.util.List"%>
+<%@ page import="java.util.Random"%>
+<%@ page import="java.util.Map"%>
+<%@ page import="java.util.HashMap"%>
 
 <!DOCTYPE html>
 <html>
@@ -13,27 +16,25 @@
 
 	<p>다음 문제의 답을 입력하세요.</p>
 
-	<%-- 	<%
-	List<String> quiz = new ArrayList<>();
-	quiz.add("탕수육을 먹을 때 부먹vs찍먹?");
-	quiz.add("레드벨벳 최애 멤버는 ???? ");
-	quiz.add("혜령이를 감당할 수 있는 유일한 인재는 ???");
+	<%
 	
-	이런식으로 배열에 넣고
-	답도 배열에다가 넣어서
-	두 배열의 값끼리 Map으로 짝을 만들어주고
+	Random r = new Random();
+	int num = r.nextInt(5)+1;
 	
-	그다음에 구해주면 될거같은데 안되려나 ??????
-	안되나 ???
-	Map으로 짝을 만들어주는건 정답페이지 가서 해야하나 ??
-	주말동안 해보기!!!
+	Map<Integer, String> quizMap = new HashMap<>();
 	
-	%>  --%>
-
+	quizMap.put(1, "탕수육을 먹을 때 부먹vs찍먹?");
+	quizMap.put(2, "레드벨벳 최애 멤버는 ???? ");
+	quizMap.put(3, "혜령이를 감당할 수 있는 유일한 인재는 ???");
+		
+	%>
+	
+	<%-- 왜<p>에다가 안넣고 바로 하는건지 ?? 바로 해도 나오나 ???--%>
+	<%= quizMap.get(num).toString() %>
 	
 	
 
-	<p>탕수육을 먹을 때 부먹vs찍먹?</p>
+
 
 	<form action="/everyone/quizA.jsp" method="post">
 
