@@ -28,8 +28,9 @@
 	
 	http method get과 post의 차이점?
 	- post는 사용자의 url에 정보가 노출이 안되게한다.
-	- get은 사용자의 url에 정보가 보이도록한다.
 	
+	- get은 사용자의 url에 정보가 보이도록한다.
+	- 주소에 표현되는데 길이 제한이 있기 때문에 많은 양을 표현하지 못한다.
 	http request의 입력 파라미터(query parameter string)의 표현법?
 	- 이게 그 progress랑 연관이 있나 ?? 
 	- ? string query 하는거 ....? https://challenge.tistory.com/10
