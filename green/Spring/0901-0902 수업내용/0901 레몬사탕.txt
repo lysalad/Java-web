@@ -1,0 +1,11 @@
+0902 효정언니 필기
+
+
+
+Definition of config in English Dictionary : (computing)configuration 구성
+구성 파일 설정이나 프로그램의 실행 일부 등을 저장해둔 파일입니다. 단순히 글자로 저장하기도 하며, XML이나 JSON 같은 저장방식으로 저장하기도
+bean은 걍 스프링에서 지네들이 만들어낸말 아니야? 그 ioc컨테이너에 담을 때 빈이라는 이름으로 담자! 지들끼리 정한거지
+프레임워크에 자바 인스턴스 객체를 맡겨놓고 쓸 수 있게 연습을 할건데 IOC라는 통이 있으면 이 자바 객체에 spring bean이라는 이름으로 등록해서 관리해서 필요할 때 이걸 주세요, 하고 의존성을 집어넣어줄 수 있다
+- @Primary는 인터페이스 등장할때 중요해짐!! bean부를때 인터페이스로 부르면 구현체를 들고오니깐 어느 구현체를 들고올지를 정함
+- @Qualifier <- @Autowired할건데 어느애로 들고올건지 정해주는거
+- @Service @Repository @controller 다 같은 @component인데 이름만 다르게 지정한거~ 
