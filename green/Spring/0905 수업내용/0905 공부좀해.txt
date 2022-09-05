@@ -1,0 +1,13 @@
+
+@Autowired
+
+@Configuration
+
+@Bean
+
+어노테이션에 대해 공부하기
+rowmapper 그게 먼데!!! 그게머냐고1!!!
+
+
+-- 
+UserService에서 유저 레퍼지토리에대한 주입을 받고자한다.
